@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIET Institute</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-color:#f4f4f4;
+        }
+
+        header{
+            background-color:#003366;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        nav{
+            background-color:#00509e;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-weight:bold;
+        }
+
+        section{
+            background:white;
+            margin:20px;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            color:#003366;
+            margin-bottom:15px;
+        }
+
+        .campus-image{
+            display:block;
+            margin:auto;
+            width:80%;
+            height:400px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+        }
+
+        table, th, td{
+            border:1px solid black;
+        }
+
+        th{
+            background:#003366;
+            color:white;
+        }
+
+        th, td{
+            padding:10px;
+            text-align:center;
+        }
+
+        form{
+            display:flex;
+            flex-direction:column;
+        }
+
+        input, select, textarea{
+            margin:8px 0;
+            padding:10px;
+        }
+
+        button{
+            background:#003366;
+            color:white;
+            padding:10px;
+            border:none;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#00509e;
+        }
+
+        iframe{
+            width:100%;
+            border:none;
+            border-radius:10px;
+        }
+
+        footer{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>KIET Institute</h1>
+        <p>Excellence in Education and Innovation</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#courses">Courses</a>
+        <a href="#admission">Admission Form</a>
+        <a href="#tour">Campus Tour</a>
+        <a href="#map">Location</a>
+    </nav>
+
+    <!-- Campus Image -->
+    <section>
+        <h2>Campus View</h2>
+
+        <img
+        src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1200"
+        alt="Campus Image"
+        class="campus-image">
+
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Us</h2>
+
+        <p>
+            KIET Institute is one of the leading educational institutions,
+            known for academic excellence, innovation, research, and
+            industry-oriented learning. The institute provides modern
+            laboratories, smart classrooms, sports facilities, libraries,
+            and opportunities for overall student development.
+        </p>
+
+        <br>
+
+        <p>
+            Our mission is to create skilled professionals and future
+            leaders through quality education and practical learning.
+        </p>
+    </section>
+
+    <!-- Table -->
+    <section id="courses">
+        <h2>Popular Courses</h2>
+
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Duration</th>
+                <th>Seats</th>
+            </tr>
+
+            <tr>
+                <td>B.Tech CSE</td>
+                <td>4 Years</td>
+                <td>240</td>
+            </tr>
+
+            <tr>
+                <td>B.Tech AI & ML</td>
+                <td>4 Years</td>
+                <td>120</td>
+            </tr>
+
+            <tr>
+                <td>MCA</td>
+                <td>2 Years</td>
+                <td>60</td>
+            </tr>
+
+            <tr>
+                <td>MBA</td>
+                <td>2 Years</td>
+                <td>120</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Student Form -->
+    <section id="admission">
+        <h2>Student Application Form</h2>
+
+        <form>
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="email" placeholder="Email Address" required>
+
+            <input type="tel" placeholder="Mobile Number" required>
+
+            <select required>
+                <option value="">Select Course</option>
+                <option>B.Tech CSE</option>
+                <option>B.Tech AI & ML</option>
+                <option>MCA</option>
+                <option>MBA</option>
+            </select>
+
+            <textarea rows="5"
+            placeholder="Why do you want to join KIET?"></textarea>
+
+            <button type="submit">
+                Submit Application
+            </button>
+
+        </form>
+    </section>
+
+    <!-- YouTube Video -->
+    <section id="tour">
+        <h2>Campus Tour Video</h2>
+
+        <iframe
+        height="450"
+        src="https://www.youtube.com/embed/ZvUgctMi-kw"
+        title="KIET Campus Tour"
+        allowfullscreen>
+        </iframe>
+
+    </section>
+
+    <!-- Google Map -->
+    <section id="map">
+        <h2>Find Us on Google Maps</h2>
+
+        <iframe
+        height="450"
+        src="https://maps.google.com/maps?q=KIET%20Group%20of%20Institutions%20Ghaziabad&t=&z=15&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+
+    </section>
+
+    <!-- Extra Section -->
+    <section>
+        <h2>Why Choose KIET?</h2>
+
+        <ul>
+            <li>Experienced Faculty</li>
+            <li>Modern Laboratories</li>
+            <li>Placement Support</li>
+            <li>Sports and Cultural Activities</li>
+            <li>Industry Collaborations</li>
+            <li>Innovation and Research Environment</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2026 KIET Institute | Designed by Student Developer</p>
+    </footer>
+
+</body>
+</html>
